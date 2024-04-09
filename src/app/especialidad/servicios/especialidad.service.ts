@@ -1,30 +1,25 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+
+import { Observable, filter } from 'rxjs';
 import { ApiResponse } from 'src/app/interfaces/api-response';
-import { Especialidad } from 'src/app/interfaces/especialidad';
 import { environment } from 'src/environments/environment';
+import { Especialidad } from '../interfaces/especialidad';
 import { CookieService } from 'ngx-cookie-service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EspecialidadService {
+  baseUrl: string = environment.apiUrl + 'especialidad/';
 
-   baseUrl: string = environment.apiUrl + 'especialidad/';
-
-  constructor(private http: HttpClient, private cookieService: CookieService) { }
+  constructor(private http: HttpClient, private cookieService: CookieService) {}
 
   lista(): Observable<ApiResponse> {
-    return this.http.get<ApiResponse>(`${this.baseUrl}`,
-    {
-      headers: {
-        'Autorization':this.cookieService.get('Autorization')
-      }
-    });
-    
+    return this.http.get<ApiResponse>(`${this.baseUrl}`);
   }
-  listaActivos(): Observable<ApiResponse> {
+
+   listaActivos(): Observable<ApiResponse> {
     return this.http.get<ApiResponse>(`${this.baseUrl}listadoActivos`);
   }
 
@@ -33,8 +28,7 @@ export class EspecialidadService {
   }
 
   editar(request: Especialidad): Observable<ApiResponse> {
-    return this.http.put<ApiResponse>(`${this.baseUrl}`, request
-    );
+    return this.http.put<ApiResponse>(`${this.baseUrl}`, request);
   }
 
   eliminar(id: number): Observable<ApiResponse> {
