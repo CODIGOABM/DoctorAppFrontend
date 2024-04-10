@@ -2,13 +2,14 @@
     <div class="container">
       <div class="card border-light-subtle shadow-sm">
         <div class="row g-0">
-          <div class="col-12 col-md-6 text-bg-primary">
+          <div class="col-12 col-md-6 text " style=" background-image: linear-gradient(224deg, 
+          hsl(211deg, 100%, 24%), 
+          hsl(204, 100%, 26%));">
             <div class="d-flex align-items-center justify-content-center h-100">
               <div class="col-10 col-xl-8 py-3">
-                <img class="img-fluid rounded mb-4" loading="lazy" src="./assets/DoctorApp.png" width="245" height="80"  alt="doctorApp">
-                <hr class="border-primary-subtle mb-4">
-                <p class="text-white">Un sistema clínico confiable y eficaz es la base de la atención centrada en el
-                  paciente.
+                <img class="img-fluid rounded mb-4" loading="lazy" src="./assets/LOGO MMM BLANCO.png" width="245" height="80"  alt="doctorApp">
+                <hr class="  border-primary-subtle mb-4">
+                <p class="text-white text-uppercase"> Informes | 2024 | Oficinas Nacionales
                 </p>
               </div>
             </div>
@@ -18,11 +19,13 @@
               <div class="row">
                 <div class="col-12">
                   <div class="mb-5">
-                    <h2 class=" badge bg-primary text-wrap">Bienvenido</h2>
+                    <h2 class=" badge  text-wrap" style=" background-image: linear-gradient(224deg, 
+                    hsl(211deg, 100%, 24%), 
+                    hsl(204, 100%, 26%));">Bienvenido</h2>
                   </div>
                 </div>
               </div>
-              <form  [formGroup]="formLogin" (ngSubmit)="iniciarSesion()">
+              <form  [formGroup]="formLogin" (ngSubmit)="iniciarSesion()" >
                 <div class="row gy-3 gy-md-4 overflow-hidden">
                   <div class="col-12">
                    <mat-form-field class="full-width" appearance="outline">
@@ -45,7 +48,9 @@
                   </div>
                   <div class="col-12">
                      <div class="d-grid">
-                      <button class=" btn bsb-btn-xl btn-primary" type="submit" [disabled]="formLogin.invalid">
+                      <button class=" .btn-round btn bsb-btn-xl text-white" style=" background-image: linear-gradient(224deg, 
+                      hsl(211deg, 100%, 24%), 
+                      hsl(204, 100%, 26%));" type="submit" [disabled]="formLogin.invalid">
                       Iniciar Sesión</button>
                      </div>
                   </div>
@@ -57,5 +62,6 @@
       </div>
     </div>
   </section>
+  
 
   <mat-progress-bar mode="indeterminate" *ngIf="mostrarLoading"></mat-progress-bar>
