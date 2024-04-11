@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  titulo:string = ' Bienvenido a DoctorApp';
+  title:string = ' Bienvenido a DoctorApp';
   usuarios: any;
 
    constructor(private http: HttpClient){}

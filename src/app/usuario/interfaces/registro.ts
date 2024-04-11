@@ -1,5 +1,9 @@
 export interface Registro {
     username: string,
+    genero: string,
+    DirecciónResidencia:string, 
+    DirecciónPostal: string,
+    DepartamentoResidencia: string,
     password: string,
     apellidos: string,
     nombres: string,
@@ -7,6 +11,6 @@ export interface Registro {
     rol: string,
     telefono: number,
     direccion: string,
-    direccionPostal: string
+   
 
 }
