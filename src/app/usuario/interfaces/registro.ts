@@ -4,6 +4,9 @@ export interface Registro {
     apellidos: string,
     nombres: string,
     email: string;
-    rol: string
+    rol: string,
+    telefono: number,
+    direccion: string,
+    direccionPostal: string
 
 }

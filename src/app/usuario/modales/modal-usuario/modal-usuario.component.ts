@@ -30,7 +30,10 @@ export class ModalUsuarioComponent {
       apellidos: ['', Validators.required],
       nombres: ['', Validators.required],
       email: ['', Validators.required],
-      rol: ['', Validators.required]
+      rol: ['', Validators.required],
+      telefono: ['', Validators.required],
+      direccion: ['', Validators.required],
+      direccionPostal: ['', Validators.required],
     });
     this._usuarioServicio.listadoRoles().subscribe({
       next: (data) => {
@@ -42,12 +45,15 @@ export class ModalUsuarioComponent {
 
   registrarUsuario() {
      const usuario: Registro = {
-        username: this.formUsuario.value.username,
-        password: this.formUsuario.value.password,
-        apellidos: this.formUsuario.value.apellidos,
-        nombres: this.formUsuario.value.nombres,
-        email: this.formUsuario.value.email,
-        rol: this.formUsuario.value.rol
+       username: this.formUsuario.value.username,
+       password: this.formUsuario.value.password,
+       apellidos: this.formUsuario.value.apellidos,
+       nombres: this.formUsuario.value.nombres,
+       email: this.formUsuario.value.email,
+       rol: this.formUsuario.value.rol,
+       telefono: this.formUsuario.value.telefono,
+       direccion: this.formUsuario.value.direccion,
+       direccionPostal:this.formUsuario.value.direccionPostal,
      }
      this._usuarioServicio.registrar(usuario).subscribe({
       next: (data) => {

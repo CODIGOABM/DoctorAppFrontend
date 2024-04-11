@@ -25,15 +25,35 @@
           <input formControlName="apellidos" matInput autocomplete="off">
         </mat-form-field>
       </div>
-      <div class="col-6">
+            <div class="col-6">
         <mat-form-field class="full-width" appearance="outline">
           <mat-label>Nombres</mat-label>
           <input formControlName="nombres" matInput autocomplete="off">
         </mat-form-field>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
+    <div class="col-6">
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>telefono</mat-label>
+        <input formControlName="telefono" matInput autocomplete="off">
+      </mat-form-field>
+    </div>
+    <div class="col-6">
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>direccion</mat-label>
+        <input formControlName="direccion" matInput autocomplete="off">
+      </mat-form-field>
+    </div>
+    <div class="col-6">
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Direccion Postal</mat-label>
+        <input formControlName="direccionPostal" matInput autocomplete="off">
+      </mat-form-field>
+    </div>
+
+    
+      <div class="row">
+      <div class="col-6">
           <mat-form-field class="full-width" appearance="outline">
             <mat-label>Email</mat-label>
             <input formControlName="email" matInput autocomplete="off" type="email"
@@ -45,7 +65,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12">
+      <div class="col-6">
         <mat-form-field class="full-width" appearance="outline">
           <mat-label>Rol</mat-label>
           <mat-select formControlName="rol">
