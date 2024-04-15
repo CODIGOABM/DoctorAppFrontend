@@ -26,11 +26,17 @@ export class ModalUsuarioComponent {
   ){
     this.formUsuario = this.fb.group({
       username: ['', Validators.required],
+      genero: ['', Validators.required],
+      DirecciónResidencia: ['', Validators.required],
+      DirecciónPostal: ['', Validators.required],
+      DepartamentoResidencia: ['', Validators.required],
       password: ['',Validators.required],
       apellidos: ['', Validators.required],
       nombres: ['', Validators.required],
       email: ['', Validators.required],
-      rol: ['', Validators.required]
+      rol: ['', Validators.required],
+      telefono: ['', Validators.required],
+      
     });
     this._usuarioServicio.listadoRoles().subscribe({
       next: (data) => {
@@ -42,12 +48,20 @@ export class ModalUsuarioComponent {
 
   registrarUsuario() {
      const usuario: Registro = {
-        username: this.formUsuario.value.username,
-        password: this.formUsuario.value.password,
-        apellidos: this.formUsuario.value.apellidos,
-        nombres: this.formUsuario.value.nombres,
-        email: this.formUsuario.value.email,
-        rol: this.formUsuario.value.rol
+       username: this.formUsuario.value.username,
+       genero: this.formUsuario.value.genero,
+       DirecciónResidencia: this.formUsuario.value.DirecciónResidencia,
+       DirecciónPostal: this.formUsuario.value.DirecciónPostal,
+       DepartamentoResidencia: this.formUsuario.value.DepartamentoResidencia,
+       telefono: this.formUsuario.value.telefono,
+       password: this.formUsuario.value.password,
+       apellidos: this.formUsuario.value.apellidos,
+       nombres: this.formUsuario.value.nombres,
+       email: this.formUsuario.value.email,
+       rol: this.formUsuario.value.rol,
+    
+       direccion: this.formUsuario.value.direccion,
+       
      }
      this._usuarioServicio.registrar(usuario).subscribe({
       next: (data) => {

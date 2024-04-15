@@ -19,7 +19,8 @@ export class ListadoUsuarioComponent implements OnInit, AfterViewInit{
     'apellidos',
     'nombres',
     'email',
-    'rol'
+    'rol',
+ 
   ];
   dataInicial: Usuario[] = [];
   dataSource = new MatTableDataSource(this.dataInicial);
