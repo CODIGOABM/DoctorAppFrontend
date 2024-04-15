@@ -15,8 +15,8 @@ import { ListadoUsuarioComponent } from '../usuario/pages/listado-usuario/listad
 const routes: Routes = [
   {
     path: '', component: LayoutComponent,
-    runGuardsAndResolvers: 'always',
-    canActivate: [authGuard],
+    //runGuardsAndResolvers: 'always',
+    //canActivate: [authGuard],
     children: [
       {path: 'dashboard', component: DashboardComponent, pathMatch:'full'},
       {path: 'especialidades', component: ListadoEspecialidadComponent, pathMatch:'full'},

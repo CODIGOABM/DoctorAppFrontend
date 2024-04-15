@@ -1,4 +1,5 @@
-
+<div>
+ 
 <h2 mat-dialog-title>{{titulo}} Usuario</h2>
 
 <mat-dialog-content>
@@ -11,6 +12,67 @@
           <input formControlName="username" matInput autocomplete="off">
         </mat-form-field>
       </div>
+
+      <div class="col-6">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input formControlName="password" matInput autocomplete="off" type="password">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-6">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Username</mat-label>
+          <input formControlName="username" matInput autocomplete="off">
+        </mat-form-field>
+      </div>
+
+      <div class="col-6">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input formControlName="password" matInput autocomplete="off" type="password">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-6">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Username</mat-label>
+          <input formControlName="username" matInput autocomplete="off">
+        </mat-form-field>
+      </div>
+
+      <div class="col-6">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input formControlName="password" matInput autocomplete="off" type="password">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-6">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Username</mat-label>
+          <input formControlName="username" matInput autocomplete="off">
+        </mat-form-field>
+      </div>
+
+      <div class="col-6">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input formControlName="password" matInput autocomplete="off" type="password">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-6">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Username</mat-label>
+          <input formControlName="username" matInput autocomplete="off">
+        </mat-form-field>
+      </div>
+
       <div class="col-6">
         <mat-form-field class="full-width" appearance="outline">
           <mat-label>Password</mat-label>
@@ -25,6 +87,7 @@
           <input formControlName="apellidos" matInput autocomplete="off">
         </mat-form-field>
       </div>
+
       <div class="col-6">
         <mat-form-field class="full-width" appearance="outline">
           <mat-label>Nombres</mat-label>
@@ -32,6 +95,7 @@
         </mat-form-field>
       </div>
     </div>
+    
     <div class="row">
       <div class="col-12">
           <mat-form-field class="full-width" appearance="outline">
@@ -64,3 +128,5 @@
   <button mat-raised-button color="primary" [disabled]="formUsuario.invalid"
      (click)="registrarUsuario()">{{nombreBoton}}</button>
 </mat-dialog-actions>
+
+</div>
