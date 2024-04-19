@@ -4,6 +4,7 @@ export interface Registro {
     DirecciónResidencia:string, 
     DirecciónPostal: string,
     DepartamentoResidencia: string,
+    MunicipioResidencia: string
     password: string,
     apellidos: string,
     nombres: string,
