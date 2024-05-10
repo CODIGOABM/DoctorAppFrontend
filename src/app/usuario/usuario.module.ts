@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { MaterialModule } from '../material/material.module';
 import { ListadoUsuarioComponent } from './pages/listado-usuario/listado-usuario.component';
 import { ModalUsuarioComponent } from './modales/modal-usuario/modal-usuario.component';
+import { RegistroComponent } from './registro/registro.component';
 
 
 
@@ -13,7 +14,8 @@ import { ModalUsuarioComponent } from './modales/modal-usuario/modal-usuario.com
   declarations: [
     LoginComponent,
     ListadoUsuarioComponent,
-    ModalUsuarioComponent
+    ModalUsuarioComponent,
+    RegistroComponent
   ],
   imports: [
     CommonModule,
