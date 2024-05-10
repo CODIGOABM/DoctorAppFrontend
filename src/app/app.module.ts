@@ -7,6 +7,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UsuarioModule } from './usuario/usuario.module';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { CompartidoModule } from './compartido/compartido.module';
 
 @NgModule({
   declarations: [

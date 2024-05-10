@@ -20,10 +20,10 @@ import { RegistroComponent } from './registro/registro.component';
   imports: [
     CommonModule,
     CompartidoModule,
-    MaterialModule
+    MaterialModule,
   ],
   exports: [
-    LoginComponent
+    LoginComponent,RegistroComponent
   ],
   providers: [
     UsuarioService

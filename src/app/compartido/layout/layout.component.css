@@ -1,0 +1,21 @@
+.c-subheader {
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    --subheader-height: 45px;
+    height: var(--subheader-height)
+}
+
+.c-subheader+aside {
+    position: relative;
+    z-index: 1
+}
+
+.c-subheader__brand {
+    width: 97px
+}
+
+.c-subheader__brand a {
+    color: #a50e0e;
+    display: block
+}

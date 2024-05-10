@@ -28,6 +28,4 @@ export class RegistroComponent {
       email: ['', Validators.required],
       password: ['', Validators.required],
     });}
-
-}
-
+  }
